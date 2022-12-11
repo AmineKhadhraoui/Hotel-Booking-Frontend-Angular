@@ -1,0 +1,25 @@
+div{
+    display: flex;
+    justify-content: center;
+    margin-top: 0.8em;
+  }
+  div input{
+    border-radius: 10rem 0 0 10rem;
+    border: none;
+    height: 3rem;
+    width: 20rem;
+    background-color:rgb(235, 245, 248);
+    font-size: 1rem;
+    font-weight: 500;
+    padding-left:2em;
+  
+  }
+  div button{
+    color: rgb(0, 0, 0);
+    height: 3.2rem;
+    width: 5rem;
+    font-size: 1rem;
+    border-radius: 0 1rem 1rem 0;
+    border-color: rgb(184, 187, 189);
+    background-color: rgb(223, 223, 223);
+  }

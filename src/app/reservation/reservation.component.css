@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Popppins:wght@300;400;500;600;700;800;900&display=swap');
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  font-family: 'Popppins' ,sans-serif;
+}
+body{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  flex-direction:column;
+  gap:30px;
+  background-color: #1d2b3a;
+  background-size: 100% 100%;
+}
+.InputBox
+{
+  position:relative;
+  width:350px;
+
+}
+.InputBox input{
+  width:100%;
+  padding:10px;
+  border : 1px solid rgba(255,255,255,0.25);
+  background-color: #1d2b3a ;
+  border-radius: 5px;
+  outline:none;
+  color:#fff;
+  font-size: 1em;
+}
+.InputBox span{
+  position:absolute;
+  left:0;
+  padding: 10px;
+  pointer-events: none;
+  font-size: 1em;
+  color : rgba(255,255,255,0.25);
+  text-transform: uppercase;
+  transition: 0.5s;
+
+}
+.InputBox input:valid ~ span,
+.InputBox input:focus ~ span 
+{
+  color : #00dfc4;
+  transform: translateX(10px) translateY(-7px);
+  font-size: 0.65em;
+  padding : 0 10px;background-color: #1d2b3a;
+  border-left: 1px solid #00dfc4;
+  border-right: 1px solid #00dfc4;
+  letter-spacing: 0.2em;
+}
+.InputBox input:valid,
+.InputBox input:focus{
+  border:1px solid #00dfc4;
+}
+button {
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  color:#00dfc4;
+  background-color: #1d2b3a;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-decoration: none;
+  font-size: 17px;
+  overflow: hidden;
+  transition: 0.2s;
+  border : 1px solid rgba(255,255,255,0.25);
+ 
+
+}
+button:hover{
+  color: #255784;
+  background-color: #2196f3;
+  box-shadow: 0 0 10px #2196f3 , 0 0 40px #2196f3, 0 0 20px #2196f3;
+  transition-delay: 0.1s;
+}
+h2{
+  position: relative;
+  font-size: 6em;
+  letter-spacing: 15px;
+  color: #00dfc4;
+  text-transform: uppercase;
+  width:100%;
+  text-align: center;
+  -webkit-box-reflect: below 1px linear-gradient(transparent , #0008);
+  line-height: 0.70em;
+  
+} 
+
+
+
+ 
+     
+     
