@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Contact } from '../Model/Contact.model';
+import { NgModule } from '@angular/core';
+import { ContactService } from '../Services/food/Contact.service';
 
 @Component({
   selector: 'app-contact',
@@ -6,10 +9,21 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./contact.component.css']
 })
 export class ContactComponent implements OnInit {
+  Contact :Contact={name:'',email:'',subject:'',message:''};
 
-  constructor() { }
+  constructor(private ContactService:ContactService) { }
 
   ngOnInit(): void {
+  }
+  onSubmit() {
+    this.ContactService.addReservation(this.Contact).subscribe(
+      Contact => {
+        console.log('Contact created successfully: ', Contact);
+        // reset the form fields
+        this.Contact = { name:'', email:'', subject: '', message:''};
+      },
+      error => console.error('Error creating Contact: ', error)
+    );
   }
 
 }

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<body class="class1">
+<!--<div class="class2" ><h1 >You Can Enjoy Our Hotel Phenamenol Atmosphere<br> Without Even Booking A Room ! </h1></div>-->
+<div class="class2" ><h1 >You Can Enjoy Our Hotel Phenamenol Atmosphere<br> Without Even Booking A Room ! </h1></div>
+<br><br>
+<form #myForm="ngForm" (ngSubmit)="onSubmit()">
+    <label for="name">Name:</label>
+    <input type="text" [(ngModel)]="Events.name" id="name" name="name" required>
+
+    <label for="email">Email:</label>
+    <input type="email" [(ngModel)]="Events.email" id="email" name="email" required>
+
+    <label for="phone">Phone:</label>
+    <input type="tel" [(ngModel)]="Events.phone" id="phone" name="phone" required>
+
+    <label for="reservation-type">Reservation Type:</label>
+    <select id="reservation-type" [(ngModel)]="Events.reservation_type" name="reservation-type" required>
+        <option value="">Select reservation type</option>
+        <option value="waterpool">Waterpool</option>
+        <option value="restaurant">Restaurant</option>
+        <option value="party">Party</option>
+    </select>
+
+    <label for="reservation-date">Reservation Date:</label>
+    <input type="date" [(ngModel)]="Events.reservation_date" id="reservation-date" name="reservation-date" required>
+<br><br>
+    <input type="submit" value="Make Reservation">
+</form>
+<br><br><br><br><br><br><br><br><br>
+</body>
+</html>

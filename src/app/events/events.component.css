@@ -1,0 +1,74 @@
+.class1{
+
+    background-image: url(/assets/images/events5.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+
+}
+.class2{
+    color:white;
+    text-align: center;
+   
+
+}
+
+  
+form {
+    width: 600px; /* Adjust the width as needed */
+    height: 480px; /* Adjust the height as needed */
+    max-width: none; /* Remove the max-width restriction */
+    padding: 40px; 
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-family: Arial, sans-serif;
+  
+}
+form {
+    /* Your existing styles */
+
+    background-image: linear-gradient(to bottom,#ff7200, gold, white);
+    /* Add any additional background properties as needed */
+}
+
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+input[type="text"], input[type="email"], input[type="tel"], select {
+    display: block;
+    width: 95%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+}
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: black;
+}
+
+input[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #ff7200;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+input[type="submit"]:hover {
+    background-color: #fc923b;
+}

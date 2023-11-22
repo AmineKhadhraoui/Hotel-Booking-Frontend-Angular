@@ -6,11 +6,11 @@ div
 
 }
 div a{
-    background-color: rgb(245, 243, 219);
+    background-color: white;
     padding: 0px  13px;
     margin:  .15rem;
     border-radius: 10rem;
-    color: rgb(203, 104, 104);
+    color: #ff7200;
     font-weight: bold;
 
 
